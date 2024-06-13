@@ -1,0 +1,59 @@
+{
+  "info": {
+    "_postman_id": "05d23c0b-37f6-4b82-bce2-0f4942e5c6c0",
+    "name": "gilmore-cuisine",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "752706"
+  },
+  "item": [
+    {
+      "name": "List Bookings",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://your-rest-id.execute-api.your-region.amazonaws.com/prod/v1/bookings/",
+          "protocol": "https",
+          "host": [
+            "your-rest-id",
+            "execute-api",
+            "your-region",
+            "amazonaws",
+            "com"
+          ],
+          "path": ["prod", "v1", "bookings", ""]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create Booking",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"customerName\": \"Jane Smith\",\n  \"contactNumber\": \"+0987654321\",\n  \"bookingDate\": \"2024-07-01\",\n  \"bookingTime\": \"18:30\",\n  \"numberOfGuests\": 2,\n  \"specialRequests\": \"Vegetarian meal\",\n  \"tableNumber\": 5,\n  \"email\": \"jane.smith@example.com\"\n}\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://your-rest-id.execute-api.your-region.amazonaws.com/prod/v1/bookings/",
+          "protocol": "https",
+          "host": [
+            "your-rest-id",
+            "execute-api",
+            "your-region",
+            "amazonaws",
+            "com"
+          ],
+          "path": ["prod", "v1", "bookings", ""]
+        }
+      },
+      "response": []
+    }
+  ]
+}
